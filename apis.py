@@ -1,8 +1,11 @@
 #apis.py
 
-#from clientmanagement import (
-#
-#)
+from clientmanagement import (
+    CreateClientAPI,
+    UpdateClientAPI,
+    RetrieveClientAPI,
+    ListClientsAPI,
+)
 
 from servicemanagement import (
     AssignRecurringService,
@@ -36,4 +39,8 @@ def get_all_apis(conn):
         CrupdateMultiplePropertiesAPI(conn),
         AssignRecurringService(conn),
         UpdateService(conn)
+        CreateClientAPI(conn),
+        UpdateClientAPI(conn),
+        RetrieveClientAPI(conn),
+        ListClientsAPI(conn)
     ]
